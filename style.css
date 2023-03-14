@@ -11,54 +11,46 @@ ul {
     font-family: 'Kanit', sans-serif;
 }
 
-.flux {
-    margin-left: 50px;
-    margin-right: 50px;
-}
 
-@media (max-width: 500px) {
+@media (max-width: 500px) 
+{
     .flux {
         margin-left: 15px;
         margin-right: 15px;
     }
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
+.navbar-brand {
+    margin-left: 50px;
 }
-
-.list-links {
-    display: flex;
-    column-gap: 50px;
-}
-
-.logo {
-    width: 110px;
-    height: 90px;
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 70px;
 }
 
 .nav-link {
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 300;
 }
+
+.nav-item {
+    margin-left:20px;
+    margin-right:20px;
+}
+
 
 .image-banner {
     width: 100%;
-    margin-top: 20px;
-    position: relative;
-    opacity: 80%;
-   
+    position:relative;
+    opacity:80%;
 }
 
 .text-over {
     position: absolute;
     left: 15%;
     top: 30%;
-    color: #FFFFFF;
+    color: #f50606;
     font-size: 50px;
     font-weight: 500;
     -webkit-text-stroke: 1px #050404;
@@ -83,7 +75,7 @@ header {
 
 .cont-item-img {
     opacity: 0.8;
-  }
+}
 
 h2 {
     position: absolute;
@@ -96,11 +88,20 @@ h2 {
     
 }
 
+*{
+    box-sizing: border-content;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
 h3 {
     color: #FFFFFF;
     text-align: center;
-    margin-top: 20px;
-    padding: 10px;
+    padding: 30px 10px 10px;
+    margin: 0 0 30px;
 }
 
 .partenaires {
@@ -108,23 +109,25 @@ h3 {
 }
 
 .grid-container {
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 400px 400px;
-    grid-template-rows: auto;
-    justify-content: center;
-    gap: 40px;
-}
-
-.grid-container li {
-    padding: 10px;
-    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    justify-content: space-between;
+    row-gap: 30px;
 }
 
 .grid-container li img {
+    display: block;
     width: 100%;
-    height: 100%;
-    justify-content: center;
-    margin-left: 50%;
+    height: auto;
 }
-
+.page-footer-font-small-grey {
+    background-color: grey;
+}
 
