@@ -110,16 +110,17 @@ h3 {
 
 .grid-container {
     list-style: none;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 20px;
     width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 40px;
-    justify-content: space-between;
-    row-gap: 30px;
+    row-gap: 20px;
+    max-width: 800px;
+    margin: auto;
 }
 
 .grid-container li img {
